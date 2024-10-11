@@ -69,7 +69,7 @@ header {
 /* BANNER */
 .banner {
     height: 20vh;
-    background-color: aquamarine;
+    background-color: #e1efbf;
     padding: 1em;
 }
 
@@ -105,17 +105,22 @@ header {
 h1 {
     margin-bottom: 0.5em;
     text-shadow: 1px 1px 4px green;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+  
 
 /* MAIN */
 
 main {
-    height: 83vh;
+    height: 82vh;
+    background-image: url(/assets/imgs/subtle-stripes.svg)
 }
 
-main h2{
+main h2 {
     text-align: center;
-    margin: 2em;
+    margin: 1.5em;
     text-decoration: underline;
 }
 
@@ -123,21 +128,25 @@ main h2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 2em;
 }
 
-.container_prod--index article {
-    width: 30%;
-}
-
-.container_prod--index h3 {
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-.container_prod--index img {
-    max-width: 100%;
+.producto-index {
+    width: 40%;
     border: 5px solid lightgray;
+    background-color: #fff;
+    padding: 10px;
+    /* flex: 1 1 200px; */
+}
+
+.producto-index h3 {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: "Permanent Marker", cursive;
+}
+
+.producto-index img {
+    max-width: 100%;
 }
 
 
@@ -145,7 +154,7 @@ main h2{
 footer {
     background-color: brown;
     color: #fff;
-    height: 10vh;
+    height: 11vh;
     padding: 0.5em;
     display: flex;
     flex-direction: column;
@@ -159,6 +168,10 @@ footer a {
 
 footer p {
     text-align: center;
+}
+
+footer span {
+    font-family: "Lobster", sans-serif;
 }
 
 .redes  {
