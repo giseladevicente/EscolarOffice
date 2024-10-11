@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+/* HEADER */
+
+/* .nav_list {
+    list-style: none;
+}
+
+.nav_list a {
+    text-decoration: none;
+    color: cyan;
+} */
+
+header {
+    position:sticky;
+    top: 0;
+}
+
+.container_flex--header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:darkseagreen;
+    padding: 10px;
+    height: 7vh;
+}
+
+.logo {
+    width: 3em;
+    height: 3em;
+}
+
+.menu_icon {
+    width: 2em;
+    height: 2em;
+    padding-top: 0.3em;
+}
+
+.menu_sesion {
+    font-size: 0.8em;
+}
+
+.menu_sesion ul{
+    list-style: none;
+}
+
+.menu_sesion li {
+    padding: 0.5em 0 0.5em;
+}
+
+.menu_sesion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+/* BANNER */
+.banner {
+    height: 20vh;
+    background-color: aquamarine;
+    padding: 1em;
+}
+
+.banner p {
+    text-align: center;
+}
+
+.banner>div {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.banner>div>img {
+    width: 2.5em;
+}
+
+.banner_search {
+    padding-top: 2.5em;
+}
+
+.banner_search>input {
+    margin-left: 0.3em;
+    border-radius: 10%;
+    box-shadow: 2px  2px gray;
+}
+
+.banner_search>label {
+    font-weight: bold
+    ;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 4px green;
+}
+
+/* MAIN */
+
+main {
+    height: 83vh;
+}
+
+main h2{
+    text-align: center;
+    margin: 2em;
+    text-decoration: underline;
+}
+
+.container_prod--index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+.container_prod--index article {
+    width: 30%;
+}
+
+.container_prod--index h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container_prod--index img {
+    max-width: 100%;
+    border: 5px solid lightgray;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: brown;
+    color: #fff;
+    height: 10vh;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+footer a {
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+}
+
+.redes  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* iphone XR */
+

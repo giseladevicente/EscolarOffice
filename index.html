@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css">
+    <!-- cdn Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- AGREGAR GOOGLE FONTS -->
+
+    <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="shortcut icon"
       href="assets/imgs/favicon.ico"
@@ -12,47 +23,98 @@
     <title>EscolarOffice</title>
   </head>
   <body>
-    <header>
-      <img src="assets/imgs/logo.png" alt="logo" />
+    <!-- HEADER -->
+    <header class="container_flex--header">
+      <nav>
+        <div class="menu_icon">
+          <!-- <ion-icon name="menu-outline"></ion-icon> -->
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- <div>
+          <ul class="nav_list">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div> -->
+      </nav>
+
+      <div>
+        <img src="assets/imgs/logo.png" alt="logo" class="logo" />
+      </div>
+
+      <nav class="menu_sesion">
+        <ul>
+          <li><a href="#">Registrarse</a></li>
+          <li><a href="#">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <ul class="nav_list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section>
-        <img src="" alt="" />
+      <!-- BANNER -->
+      <section class="banner">
+        <div>
+          <h1>EscolarOffice</h1>
+          <img src="assets/imgs/logo.png" alt="logo" />
+        </div>
+        <p>Que tus ideas se no se limiten...</p>
+        <div class="banner_search">
+          <label for="search">Buscar</label>
+          <input type="search" name="search" id="search" />
+        </div>
       </section>
 
       <section>
-        <!-- Buscador -->
+        <h2>Nuestros productos</h2>
+
+        <div class="container_prod--index">
+          <article>
+            <h3>Comercial</h3>
+            <a href="#"
+              ><img src="assets/imgs/Comercial.png" alt="Comercial"
+            /></a>
+          </article>
+
+          <article>
+            <h3>Escolar</h3>
+            <a href="#"><img src="assets/imgs/Escolar.png" alt="Escolar" /></a>
+          </article>
+
+          <article>
+            <h3>Varios</h3>
+            <a href="#"><img src="assets/imgs/Varios.png" alt="Varios" /></a>
+          </article>
+        </div>
       </section>
+
+      <a
+        href="https://wa.me/549118888-8888"
+        class="whatsapp-button"
+        target="_blank"
+      >
+      <i class="fa-brands fa-whatsapp"></i> 
+      </a>
     </main>
 
-    <section>
-      <h2>Nuestros productos</h2>
-
-      <div>
-        <h3>Comercial</h3>
-        <img src="assets/imgs/Comercial.png" alt="Comercial" />
+    <footer>
+      <div class="redes">
+        <h3>Redes Sociales</h3>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
       </div>
 
       <div>
-        <h3>Escolar</h3>
-        <img src="assets/imgs/Escolar.png" alt="Escolar" />
+        <p>Dirección: Av. Raúl Scalabrini Ortiz 324</p>
       </div>
 
-      <div>
-        <h3>Varios</h3>
-        <img src="assets/imgs/Varios.png" alt="Varios" />
-      </div>
-    </section>
+      
 
-    <footer></footer>
+    </footer>
+
   </body>
 </html>
