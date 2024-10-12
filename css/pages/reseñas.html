@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- cdn Font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -20,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="shortcut icon"
       href="assets/imgs/favicon.ico"
@@ -28,29 +27,28 @@
     />
     <title>EscolarOffice</title>
   </head>
-
   <body>
-    <div class="grid-container-index">
+    <!-- HEADER -->
+    <div class="grid-container">
       <!-- HEADER -->
 
       <header class="header container_flex--header">
-
         <nav>
           <div class="menu_icon">
             <i class="fa-solid fa-bars"></i>
           </div>
 
           <!-- <div>
-          <ul class="nav_list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </div> -->
+            <ul class="nav_list">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div> -->
         </nav>
 
         <div>
-          <img src="assets/imgs/logo.png" alt="logo" class="logo" />
+          <img src="/assets/imgs/logo.png" alt="logo" class="logo" />
         </div>
 
         <nav class="menu_sesion">
@@ -61,55 +59,26 @@
         </nav>
       </header>
 
-      <!-- BANNER -->
-      <section class="banner">
-        <div>
-          <h1>EscolarOffice</h1>
-          <img src="assets/imgs/logo.png" alt="logo" />
-        </div>
-        <p>Que tus ideas se no se limiten...</p>
-        <div class="banner_search">
-          <label for="search">Buscar</label>
-          <input type="search" name="search" id="search" />
-        </div>
-      </section>
-      
       <!-- MAIN -->
-      <main class="main">
-        <section>
-          <h2>Nuestros productos</h2>
+      <main>
+        <h2>Reseñas</h2>
 
-          <section class="container_prod--index">
-            <div class="producto-index">
-              <h3>Comercial</h3>
-              <a href="#"
-                ><img src="assets/imgs/Comercial.png" alt="Comercial"
-              /></a>
-            </div>
+        <section class="grid-reseñas">
+          <div class="card">
+            <h3>Reseña 1</h3>
+          </div>
 
-            <div class="producto-index">
-              <h3>Escolar</h3>
-              <a href="#"
-                ><img src="assets/imgs/Escolar.png" alt="Escolar"
-              /></a>
-            </div>
+          <div class="card">
+            <h3>Reseña 2</h3>
+          </div>
 
-            <div class="producto-index">
-              <h3>Varios</h3>
-              <a href="#"><img src="assets/imgs/Varios.png" alt="Varios" /></a>
-            </div>
-          </section>
+          <div class="card">
+            <h3>Reseña 3</h3>
+          </div>
         </section>
-
-        <a
-          href="https://wa.me/549118888-8888"
-          class="whatsapp-button"
-          target="_blank"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
       </main>
 
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="redes">
           <h3>Redes Sociales</h3>

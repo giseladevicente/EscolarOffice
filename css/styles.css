@@ -9,6 +9,13 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.grid-container-index {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+
 /* HEADER */
 
 /* .nav_list {
@@ -31,7 +38,6 @@ header {
     align-items: center;
     background-color:darkseagreen;
     padding: 10px;
-    height: 7vh;
 }
 
 .logo {
@@ -57,10 +63,15 @@ header {
     padding: 0.5em 0 0.5em;
 }
 
+li:hover {
+    transform: translateY(-5px)
+}
+
 .menu_sesion a {
     color: #fff;
     text-decoration: none;
 }
+
 
 .fa-whatsapp {
     color: green;
@@ -68,7 +79,6 @@ header {
 
 /* BANNER */
 .banner {
-    height: 20vh;
     background-color: #e1efbf;
     padding: 1em;
 }
@@ -98,8 +108,7 @@ header {
 }
 
 .banner_search>label {
-    font-weight: bold
-    ;
+    font-weight: bold;
 }
 
 h1 {
@@ -114,7 +123,6 @@ h1 {
 /* MAIN */
 
 main {
-    height: 82vh;
     background-image: url(/assets/imgs/subtle-stripes.svg)
 }
 
@@ -149,12 +157,16 @@ main h2 {
     max-width: 100%;
 }
 
+.producto-index:hover {
+    transform: translateY(-5px)
+}
+
+
 
 /* FOOTER */
 footer {
     background-color: brown;
     color: #fff;
-    height: 11vh;
     padding: 0.5em;
     display: flex;
     flex-direction: column;
@@ -180,5 +192,35 @@ footer span {
     align-items: center;
 }
 
+
+
+/* RESEÑAS */
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.grid-reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    margin: 4em;
+}
+
+.card {
+    background-color: #395;
+    padding: 1em;
+    border: 2px solid #0b140e43;
+    border-radius: 10px;
+    box-shadow: 5px 10px #33995575;
+    margin-top: 1em;
+}
+
+.card:hover {
+    transform: translateY(-5px)
+}
+
 /* iphone XR */
+/* Clase 6 */
 
