@@ -216,7 +216,7 @@ footer span {
     margin-top: 1em;
 }
 
-.card:hover {
+.card-reseñas:hover {
     transform: translateY(-5px)
 }
 
