@@ -29,117 +29,124 @@
     <title>Contacto</title>
   </head>
   <body>
-    <header class="header container_flex--header">
-      <nav>
-        <div class="menu_icon">
-          <i class="fa-solid fa-bars"></i>
+    <div class="grid-container">
+      <header class="header container_flex--header">
+        <nav>
+          <div class="menu_icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div>
+            <ul class="nav_list">
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="productos.html"></a>Productos</li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="reseñas.html">Reseñas</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="logo-header">
+          <h1>EscolarOffice</h1>
+          <img src="/assets/imgs/logo.png" alt="logo" class="logo" />
         </div>
 
-        <div>
-          <ul class="nav_list">
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="productos.html"></a>Productos</li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="reseñas.html">Reseñas</a></li>
+        <nav class="menu_sesion">
+          <ul>
+            <li><a href="#">Registrarse</a></li>
+            <li><a href="#">Iniciar Sesión</a></li>
           </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h2>Contactanos</h2>
+        <section class="item-grid form-contact">
+          <form action="https://formspree.io/f/mgvewqlo" method="post">
+            <div class="flex-column box">
+              <div>
+                <label for="name">Nombre: </label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" required />
+              </div>
+              <div>
+                <label for="correo">Email: </label>
+                <input type="email" name="correo" id="correo" required />
+              </div>
+              <div>
+                <label for="tel">Teléfono: </label>
+                <input type="tel" name="tel" id="tel" />
+              </div>
+            </div>
+
+            <div class="box">
+              <fieldset class="box2">
+                <legend>Mensaje</legend>
+                <div>
+                  <label for="motivo">Motivo del mensaje: </label>
+                  <select name="motivo" id="motivo" required>
+                    <option value=""></option>
+                    <option value="C">Consulta</option>
+                    <option value="D">Devolución</option>
+                  </select>
+                </div>
+                <div>
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    required
+                    placeholder="Ingrese aquí su mensaje"
+                  ></textarea>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="box box3">
+              <button type="submit" class="button-form">Enviar</button>
+              <button type="reset" class="button-form reset">Restablecer</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="item-grid">
+          <h2>Ubicación</h2>
+          <p class="text-iframe">Nos encontramos en Av. Raúl Scalabrini Ortiz 324</p>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.184196900256!2d-58.44100622441499!3d-34.5995034729558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7368a432f9%3A0xd192639d64a641c6!2sAv.%20Ra%C3%BAl%20Scalabrini%20Ortiz%20324%2C%20C1414DNQ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728145869620!5m2!1ses-419!2sar"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <section class="item-grid medios-com">
+          <h2>Otros medios de comunicación</h2>
+          WhatsApp: 11444-4444
+          <a href="mailto:info@gmail.com?subject=Contacto">Enviar correo</a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="redes">
+          <h3>Redes Sociales</h3>
+          <div>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
         </div>
-      </nav>
 
-      <div class="logo-header">
-        <h1>EscolarOffice</h1>
-        <img src="/assets/imgs/logo.png" alt="logo" class="logo" />
-      </div>
-
-      <nav class="menu_sesion">
-        <ul>
-          <li><a href="#">Registrarse</a></li>
-          <li><a href="#">Iniciar Sesión</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h2>Contactanos</h2>
-
-      <form action="https://formspree.io/f/mgvewqlo" method="post">
-        <label for="name">Nombre: </label>
-        <input type="text" name="name" id="name" required />
-        <br /><br />
-
-        <label for="apellido">Apellido: </label>
-        <input type="text" name="apellido" id="apellido" required />
-        <br /><br />
-
-        <label for="correo">Email: </label>
-        <input type="email" name="correo" id="correo" required />
-        <br /><br />
-
-        <label for="tel">Teléfono: </label>
-        <input type="tel" name="tel" id="tel" />
-        <br /><br />
-
-        <fieldset>
-          <legend>Mensaje</legend>
-          <label for="motivo">Motivo del mensaje: </label>
-          <select name="motivo" id="motivo" required>
-            <option value=""></option>
-            <option value="C">Consulta</option>
-            <option value="D">Devolución</option>
-          </select>
-          <br /><br />
-
-          <textarea
-            name="mensaje"
-            id="mensaje"
-            rows="4"
-            cols="50"
-            required
-            placeholder="Ingrese aquí su mensaje"
-          ></textarea>
-        </fieldset>
-        <br /><br />
-
-        <button type="submit">Enviar</button>
-        <button type="reset">Restablecer</button>
-      </form>
-    </main>
-
-    <hr />
-
-    <section>
-      <h2>Ubicación</h2>
-      <p>Nos encontramos en Av. Raúl Scalabrini Ortiz 324</p>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.184196900256!2d-58.44100622441499!3d-34.5995034729558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7368a432f9%3A0xd192639d64a641c6!2sAv.%20Ra%C3%BAl%20Scalabrini%20Ortiz%20324%2C%20C1414DNQ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728145869620!5m2!1ses-419!2sar"
-        width="400"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
-    <section>
-      <h3>Otros medios de comunicación</h3>
-      WhatsApp: 11444-4444
-      <a href="mailto:info@gmail.com?subject=Contacto">Enviar correo</a>
-    </section>
-
-    <footer class="footer">
-      <div class="redes">
-        <h3>Redes Sociales</h3>
         <div>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <p>2024 <span>EscolarOffice</span>. Todos los derechos reservados.</p>
         </div>
-      </div>
-
-      <div>
-        <p>2024 <span>EscolarOffice</span>. Todos los derechos reservados.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

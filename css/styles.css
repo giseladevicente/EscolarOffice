@@ -13,6 +13,8 @@ body {
 .grid-container-index {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+
 }
 
 
@@ -79,9 +81,9 @@ li:hover {
 }
 
 
-.fa-whatsapp {
+/* .fa-whatsapp {
     color: green;
-}
+} */
 
 /* BANNER */
 .container-banner {
@@ -122,13 +124,15 @@ h1 {
 /* MAIN */
 
 main {
-    background-image: url(/assets/imgs/subtle-stripes.svg)
+    background-image: url(/assets/imgs/subtle-stripes.svg);
+    padding-bottom: 1em;
 }
 
 main h2 {
     text-align: center;
     margin: 1.5em;
     text-decoration: underline;
+    margin-bottom: 0.5em;
 }
 
 .container_prod--index {
@@ -169,6 +173,7 @@ footer {
     padding: 0.5em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1em;
 }
 
@@ -198,13 +203,14 @@ footer span {
 .grid-container {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    height: 100vh;
 }
 
 .grid-reseñas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
-    margin: 4em;
+    margin: 2em 4em 4em;
 }
 
 .card-reseñas {
@@ -228,11 +234,9 @@ footer span {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1em;
     border: 2px solid #0d0404;
     border-radius: 30px;
     padding: 2em;
-
 }
 
 .productos {
@@ -240,7 +244,7 @@ footer span {
 }
 
 .card-prod {
-    height: 17em;
+    height: 18em;
     width: 13em;
     background-color: #d5e0ebd6;
     border: 1px solid #000;
@@ -303,8 +307,136 @@ footer span {
 }
 
 
+/* CONTACTO */
+
+.item-grid {
+    padding: 1em;
+    justify-self: center;
+}
+
+.form-contact {
+    border: 1px solid #00000086;
+    width: 70vw;
+    background: #00000084;
+    color: #fff;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.button-form {
+    width: 10em;
+    background: #2a5d3b;
+    color: #fff;
+}
+
+.box {
+    padding: 1em;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+/* rows="4"
+cols="50" */
+
+.box3 {
+    display: flex;
+    justify-content: center;
+}
+
+.button-form {
+    padding: 1em;
+    margin: 1em;
+    width: 20em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    transform: translateY(-5px)
+}
+
+.reset {
+    background-color: red;
+}
+
+.text-iframe {
+    margin-bottom: 2em;
+}
+
+.medios-com {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* 650px X 400px
+Small devices (portrait tablets and large phones, 600px and up)
+ */
+@media (min-width: 600px) {
+    .producto-index img {
+        width: 70%;
+    }
+
+    
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+    .menu_icon {
+        display: none;
+    }
+
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .container_flex--header {
+        justify-content: space-between;
+        padding: 1em 2em;
+    }
+
+
+    /* Extra large device */
+    @media (min-width: 1200px) {
+        .container_flex--header {
+            justify-content: space-around;
+        }
+
+        .container-banner {
+            height: 6em;
+            align-items: center;
+        }
+
+        main h2 {
+            padding-bottom: 1em;
+        }
+
+        .container_prod--index {
+            gap: 4em;
+        }
+
+    }
+
+
+}
+
 
 
 /* iphone XR */
-/* Clase 6 */
+/* Clase 7 */
 
