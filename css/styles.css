@@ -389,8 +389,6 @@ Small devices (portrait tablets and large phones, 600px and up)
     .producto-index img {
         width: 70%;
     }
-
-    
 }
 
 /* Large devices */
@@ -409,31 +407,32 @@ Small devices (portrait tablets and large phones, 600px and up)
         justify-content: space-between;
         padding: 1em 2em;
     }
+}
 
 
-    /* Extra large device */
-    @media (min-width: 1200px) {
-        .container_flex--header {
-            justify-content: space-around;
-        }
-
-        .container-banner {
-            height: 6em;
-            align-items: center;
-        }
-
-        main h2 {
-            padding-bottom: 1em;
-        }
-
-        .container_prod--index {
-            gap: 4em;
-        }
-
+/* Extra large device */
+@media (min-width: 1200px) {
+    .container_flex--header {
+        justify-content: space-around;
     }
 
+    .container-banner {
+        height: 6em;
+        align-items: center;
+    }
+
+    main h2 {
+        padding-bottom: 1em;
+    }
+
+    .container_prod--index {
+        gap: 4em;
+    }
 
 }
+
+
+
 
 
 
