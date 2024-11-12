@@ -8,6 +8,8 @@
 body {
     width: 100vw;
     height: 100vh;
+    background: rgb(208,240,192);
+    background: radial-gradient(circle, rgba(208,240,192,1) 0%, rgba(241,241,241,1) 100%);
 }
 
 .grid-container-index {
@@ -17,40 +19,23 @@ body {
 
 }
 
-
 /* HEADER */
-
-.nav_list {
-    list-style: none;
-}
-
-.nav_list a {
-    text-decoration: none;
-    color: #FFF;
-}
-
 header {
     position:sticky;
     top: 0;
+    height: 15vh;
+    width: 100%;
+    z-index: 1000
 }
 
 .container_flex--header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:darkseagreen;
-    padding: 10px;
+    background-color:#8fbd8f;
 }
 
-.logo-header {
-    display: flex;
-}
-
-.logo {
-    width: 2.5em;
-    height: 2.5em;
-}
-
+/* Menu hamburguesa */
 .menu_icon {
     width: 2em;
     height: 2em;
@@ -59,57 +44,13 @@ header {
     padding: 5px 7px;
 }
 
-.menu_sesion {
-    font-size: 0.8em;
+.nav_list {
+    display: none;
 }
 
-.menu_sesion ul{
-    list-style: none;
-}
-
-.menu_sesion li {
-    padding: 0.5em 0 0.5em;
-}
-
-li:hover {
-    transform: translateY(-5px)
-}
-
-.menu_sesion a {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-/* .fa-whatsapp {
-    color: green;
-} */
-
-/* BANNER */
-.container-banner {
-    background-color: #e1efbf;
-    padding: 1em;
+/* centro header */
+.logo-header {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1.5em;
-}
-
-
-.banner>div {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-
-.banner_search>input {
-    margin-left: 0.3em;
-    border-radius: 10%;
-    box-shadow: 2px  2px gray;
-}
-
-.banner_search>label {
-    font-weight: bold;
 }
 
 h1 {
@@ -118,21 +59,104 @@ h1 {
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.5em;
 }
+
+.logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.parrafo-header {
+    font-size: 0.7em;
+    font-weight: 600;
+    display: none;
+}
+
+.centro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-header>input {
+    margin-left: 0.3em;
+    border-radius: 10px;
+    box-shadow: 2px  2px gray;
+    width: 40vw;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 4%;
+}
+
+.user, .icon-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-settings {
+    font-size: 0.6em;
+}
+
+.menu_sesion {
+    font-size: 0.8em;
+    display: none;
+}
+
+
+/* .fa-whatsapp {
+    color: green;
+} */
+
+/* BANNER */
+/* .container-banner {
+    background-color: #e1efbf;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5em;
+} */
+
+
+/* .banner>div {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+} */
+
+/* .banner_search>label {
+    font-weight: bold;
+} */
+
+
   
 
 /* MAIN */
 
-main {
-    background-image: url(/assets/imgs/subtle-stripes.svg);
-    padding-bottom: 1em;
+/* Carousel */
+.carousel-main{
+    margin: 3%;
 }
 
-main h2 {
+.carousel-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* 
+/* Cards */
+.cards h2 {
     text-align: center;
-    margin: 1.5em;
+    margin: 2em;
     text-decoration: underline;
-    margin-bottom: 0.5em;
+    font-family: "Permanent Marker", cursive;
 }
 
 .container_prod--index {
@@ -143,21 +167,19 @@ main h2 {
 }
 
 .producto-index {
-    width: 40%;
-    border: 5px solid lightgray;
-    background-color: #fff;
+    flex-basis: 200px;
     padding: 10px;
-    /* flex: 1 1 200px; */
+    text-align: center;
 }
 
 .producto-index h3 {
-    text-align: center;
     margin-bottom: 0.5em;
     font-family: "Permanent Marker", cursive;
 }
 
 .producto-index img {
     max-width: 100%;
+    border-radius: 50%;
 }
 
 .producto-index:hover {
@@ -168,7 +190,7 @@ main h2 {
 
 /* FOOTER */
 footer {
-    background-color: brown;
+    background-color:#3a533a;
     color: #fff;
     padding: 0.5em;
     display: flex;
@@ -382,19 +404,64 @@ cols="50" */
     gap: 1em;
 }
 
-/* 650px X 400px
-Small devices (portrait tablets and large phones, 600px and up)
- */
+
+
+/* MEDIA QUERIES */
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
 @media (min-width: 600px) {
+
+    header {
+        height: 25vh;
+    }
     .producto-index img {
-        width: 70%;
+        width: 50%;
+    }
+
+    footer {
+        margin-top: 10% ;
+    }
+}
+
+/* medium devices 768 x 600 */
+@media (min-width: 768px) {
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .settings {
+        margin-top: 0;
+        gap: 20px;
     }
 }
 
 /* Large devices */
 @media (min-width: 992px) {
-    .menu_icon {
+    
+    .nav_list a, .menu_sesion a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .parrafo-header, .menu_sesion {
+        display: block;
+    }
+
+    .menu_icon, .user{
         display: none;
+    }
+    
+    .menu_sesion ul, .nav_list{
+        list-style: none;
+    }
+
+    .menu_sesion li {
+        padding: 0.5em 0 0.5em;
+    }
+
+    li:hover {
+        transform: translateY(-5px)
     }
 
     .nav_list {
@@ -416,17 +483,12 @@ Small devices (portrait tablets and large phones, 600px and up)
         justify-content: space-around;
     }
 
-    .container-banner {
-        height: 6em;
-        align-items: center;
-    }
-
     main h2 {
         padding-bottom: 1em;
     }
 
     .container_prod--index {
-        gap: 4em;
+        gap: 10em;
     }
 
 }
