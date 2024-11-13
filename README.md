@@ -1,17 +1,15 @@
 # Proyecto Talento Tech
 
-Este proyecto es una página web básica desarrollada como parte de un curso de Front-End.
-La página está estructurada con **HTML semántico** y utiliza las etiquetas `<header>`, `<main>`, y `<footer>` para organizar el contenido. El objetivo es aprender a crear la estructura básica de una página web y prepararla para futuras mejoras con CSS y JavaScript.
+## EscolarOffice 
+Es una página web ficticia desarrollada con **HTML semántico** y **CSS** para la estructura y el estilo visual. La página incluye un diseño responsivo basado en la metodología **mobile-first**, utilizando **Flexbox**, **Grid** y **Media Queries** para adaptarse a distintos tamaños de pantalla:
 
-<!-- Del menu hamburguesa se despliegan las secciones de libreria
+- **Extra small devices:** 400px x 600px
+- **Small devices:** 601px x 400px
+- **Medium devices:** 768px x 600px
+- **Large devices:** 992px x 800px
+- **Extra large devices:** 1200px x 800px
 
-del icono user... se despliega registrarse e iniciar sesión
+La sección "Contacto" incorpora un formulario funcional configurado con **Formspree** para gestionar el envío de datos sin necesidad de backend adicional.
 
-el icono de carrito muestra los productos ingresados en carrito de compras -->
 
-extra small devices 400 x 600
-small devices 601 x 400
-medium devices 768 x 600
-large devices 992 x 800
-extra large devices 1200 x 800
 

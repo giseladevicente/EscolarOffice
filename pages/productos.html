@@ -39,7 +39,7 @@
 
           <div>
             <ul class="nav_list">
-              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="../index.html">Inicio</a></li>
               <li><a href="#">Productos</a></li>
               <li><a href="contacto.html">Contacto</a></li>
               <li><a href="reseñas.html">Reseñas</a></li>
@@ -47,17 +47,47 @@
           </div>
         </nav>
 
-        <div class="logo-header">
-          <h1>EscolarOffice</h1>
-          <img src="/assets/imgs/logo.png" alt="logo" class="logo" />
+        <div class="centro-header">
+          <div class="logo-header">
+            <h1>EscolarOffice</h1>
+            <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
+          </div>
+          <div>
+            <p class="parrafo-header">Que tus ideas se no se limiten...</p>
+          </div>
+          <div class="search-header">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder=" Buscar..."
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
 
-        <nav class="menu_sesion">
-          <ul>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Iniciar Sesión</a></li>
-          </ul>
-        </nav>
+        <div class="settings">
+          <div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p class="p-settings">Mi cuenta</p>
+            </div>
+
+            <nav class="menu_sesion">
+              <ul>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="icon-cart">
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p class="p-settings">Mi carrito</p></a
+            >
+          </div>
+        </div>
       </header>
 
       <!-- MAIN -->
@@ -429,12 +459,31 @@
           <article id="varios">
             <div class="card-prod">
               <div class="container-img">
-                <img src="/assets/imgs/varios/cortadora.png" class="card-img" />
+                <img
+                  src="../assets/imgs/artistica/barniz.png"
+                  class="card-img"
+                />
               </div>
               <div class="text-card">
-                <h4>Cortadora de papel</h4>
+                <h4>Barniz</h4>
                 <div class="text">
-                  <p><span class="precio">Precio:</span> $4000</p>
+                  <p><span class="precio">Precio:</span> $2000</p>
+                  <button class="button-prod">Carrito</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-prod">
+              <div class="container-img">
+                <img
+                  src="../assets/imgs/artistica/pinceles.png"
+                  class="card-img"
+                />
+              </div>
+              <div class="text-card">
+                <h4>Pinceles</h4>
+                <div class="text">
+                  <p><span class="precio">Precio:</span> $5.000</p>
                   <button class="button-prod">Carrito</button>
                 </div>
               </div>

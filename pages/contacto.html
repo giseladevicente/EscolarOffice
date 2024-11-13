@@ -38,25 +38,53 @@
 
           <div>
             <ul class="nav_list">
-              <li><a href="/index.html">Inicio</a></li>
-              <li><a href="productos.html"></a>Productos</li>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="productos.html">Productos</a></li>
               <li><a href="#">Contacto</a></li>
               <li><a href="reseñas.html">Reseñas</a></li>
             </ul>
           </div>
         </nav>
 
-        <div class="logo-header">
-          <h1>EscolarOffice</h1>
-          <img src="/assets/imgs/logo.png" alt="logo" class="logo" />
+        <div class="centro-header">
+          <div class="logo-header">
+            <h1>EscolarOffice</h1>
+            <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
+          </div>
+          <div>
+            <p class="parrafo-header">Que tus ideas se no se limiten...</p>
+          </div>
+          <div class="search-header">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder=" Buscar..."
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
 
-        <nav class="menu_sesion">
-          <ul>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Iniciar Sesión</a></li>
-          </ul>
-        </nav>
+        <div class="settings">
+          <div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p class="p-settings">Mi cuenta</p>
+            </div>
+
+            <nav class="menu_sesion">
+              <ul>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="icon-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="p-settings">Mi carrito</p>
+          </div>
+        </div>
       </header>
 
       <main>
@@ -99,6 +127,9 @@
                     id="mensaje"
                     required
                     placeholder="Ingrese aquí su mensaje"
+                    cols="20"
+                    rows="5"
+                    class="textarea"
                   ></textarea>
                 </div>
               </fieldset>
@@ -106,14 +137,18 @@
 
             <div class="box box3">
               <button type="submit" class="button-form">Enviar</button>
-              <button type="reset" class="button-form reset">Restablecer</button>
+              <button type="reset" class="button-form reset">
+                Restablecer
+              </button>
             </div>
           </form>
         </section>
 
         <section class="item-grid">
           <h2>Ubicación</h2>
-          <p class="text-iframe">Nos encontramos en Av. Raúl Scalabrini Ortiz 324</p>
+          <p class="text-iframe">
+            Nos encontramos en Av. Raúl Scalabrini Ortiz 324
+          </p>
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.184196900256!2d-58.44100622441499!3d-34.5995034729558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7368a432f9%3A0xd192639d64a641c6!2sAv.%20Ra%C3%BAl%20Scalabrini%20Ortiz%20324%2C%20C1414DNQ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1728145869620!5m2!1ses-419!2sar"

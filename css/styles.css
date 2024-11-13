@@ -107,34 +107,6 @@ h1 {
     font-size: 0.8em;
     display: none;
 }
-
-
-/* .fa-whatsapp {
-    color: green;
-} */
-
-/* BANNER */
-/* .container-banner {
-    background-color: #e1efbf;
-    padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1.5em;
-} */
-
-
-/* .banner>div {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-} */
-
-/* .banner_search>label {
-    font-weight: bold;
-} */
-
-
   
 
 /* MAIN */
@@ -150,9 +122,9 @@ h1 {
     object-fit: cover;
 }
 
-/* 
+
 /* Cards */
-.cards h2 {
+h2 {
     text-align: center;
     margin: 2em;
     text-decoration: underline;
@@ -222,35 +194,57 @@ footer span {
 
 /* RESEÑAS */
 
-.grid-container {
+.reseñas {
+    background-color: #f2f2f2; 
+    padding: 2em;
+    text-align: left;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}
-
-.grid-reseñas {
+    gap: 1.5em;
+  }
+  
+  .reseñas h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    color: #333;
+  }
+  
+  .reseña {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1em;
-    margin: 2em 4em 4em;
-}
-
-.card-reseñas {
-    background-color: #395;
-    padding: 1em;
-    border: 2px solid #0b140e43;
-    border-radius: 10px;
-    box-shadow: 5px 10px #33995575;
-    margin-top: 1em;
-}
-
-.card-reseñas:hover {
-    transform: translateY(-5px)
-}
+    grid-template-columns: 1fr 4fr;
+    background-color: #e6e6e6; 
+    border-radius: 8px;
+    padding: 1.5em;
+    color: #4d4d4d;
+  }
+  
+  .reseña-header {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;  
+  }
+  
+  .reseña h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #4d4d4d;
+  }
+  
+  .reseña-estrellas {
+    color: #808080; 
+  }
+  
+  .reseña-texto {
+    grid-column: span 2; 
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
 
 /* PRODUCTOS */
 
-#comercial, #escolar, #varios {
+#comercial, #escolar, #artística {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -368,8 +362,6 @@ footer span {
     gap: 1em;
     padding: 1em;
 }
-/* rows="4"
-cols="50" */
 
 .box3 {
     display: flex;
@@ -409,6 +401,8 @@ cols="50" */
 /* MEDIA QUERIES */
 
 /* Small devices (portrait tablets and large phones, 600px and up)*/
+
+/* index */
 @media (min-width: 600px) {
 
     header {
@@ -421,11 +415,19 @@ cols="50" */
     footer {
         margin-top: 10% ;
     }
+
+    /* Contacto */
+    
+    .textarea {
+        width: 300px;
+        height: 100px ;
+    }
 }
 
 /* medium devices 768 x 600 */
 @media (min-width: 768px) {
 
+    /* index */
     .carousel-item img {
         height: 200px;
     }
@@ -434,51 +436,104 @@ cols="50" */
         margin-top: 0;
         gap: 20px;
     }
+
+    /* contacto */
+
+    .form-contact input {
+        width: 100%;
+    }
+
+    .textarea {
+        width: 400px; 
+        height: 100px;
+    }
 }
 
 /* Large devices */
 @media (min-width: 992px) {
-    
-    .nav_list a, .menu_sesion a {
-        text-decoration: none;
-        color: #000;
-    }
 
+    /* index */
+    .logo-header h1 {
+        font-size: 3em;
+    }
+    
     .parrafo-header, .menu_sesion {
         display: block;
+    }
+
+    .parrafo-header {
+        font-size: 1em ;
     }
 
     .menu_icon, .user{
         display: none;
     }
-    
+
     .menu_sesion ul, .nav_list{
         list-style: none;
     }
+    
 
-    .menu_sesion li {
-        padding: 0.5em 0 0.5em;
+    .nav_list a, .menu_sesion a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .nav_list, .menu_sesion{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    a:hover {
+        color: #fff;
     }
 
     li:hover {
         transform: translateY(-5px)
     }
 
-    .nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
+    .menu_sesion li{
+        padding: 0.5em;
+    }
+
+    .settings {
+        gap: 30px;
+        margin-right: 2em;
     }
 
     .container_flex--header {
         justify-content: space-between;
-        padding: 1em 2em;
+    }
+
+    .search-header>input {
+        height: 2em;
+        margin-top: 2%;
+    }
+
+    .logo {
+        width: 3em;
+        height: 3em;
+    }
+
+    
+    /* contacto */
+
+    .form-contact input {
+        width: 30em;
+    }
+
+    .textarea {
+        width: 600px; 
+        height: 100px;
     }
 }
 
 
 /* Extra large device */
 @media (min-width: 1200px) {
+
+    /* index */
     .container_flex--header {
         justify-content: space-around;
     }
@@ -491,13 +546,28 @@ cols="50" */
         gap: 10em;
     }
 
+    .producto-index {
+        flex-basis: 400px;
+    }
+
+    .carousel-item img {
+        height: 350px;
+    }
+    
+        /* contacto */
+
+        .textarea {
+            width: 700px; 
+            height: 100px;
+        }
+
+        .form-contact input {
+            width: 30em;
+        }
 }
 
 
 
 
 
-
-/* iphone XR */
-/* Clase 7 */
 

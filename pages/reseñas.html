@@ -28,8 +28,7 @@
     <title>EscolarOffice</title>
   </head>
   <body>
-    <div class="grid-container reseña">
-    <!-- HEADER -->
+      <!-- HEADER -->
       <header class="header container_flex--header">
         <nav>
           <div class="menu_icon">
@@ -38,7 +37,7 @@
 
           <div>
             <ul class="nav_list">
-              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="../index.html">Inicio</a></li>
               <li><a href="productos.html">Productos</a></li>
               <li><a href="contacto.html">Contacto</a></li>
               <li><a href="#">Reseñas</a></li>
@@ -46,34 +45,70 @@
           </div>
         </nav>
 
-        <div class="logo-header">
-          <h1>EscolarOffice</h1>
-          <img src="/assets/imgs/logo.png" alt="logo" class="logo" />
+        <div class="centro-header">
+          <div class="logo-header">
+            <h1>EscolarOffice</h1>
+            <img src="../assets/imgs/logo.png" alt="logo" class="logo" />
+          </div>
+          <div>
+            <p class="parrafo-header">Que tus ideas se no se limiten...</p>
+          </div>
+          <div class="search-header">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder=" Buscar..."
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
         </div>
 
-        <nav class="menu_sesion">
-          <ul>
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Iniciar Sesión</a></li>
-          </ul>
-        </nav>
+        <div class="settings">
+          <div>
+            <div class="user">
+              <i class="fa-solid fa-user"></i>
+              <p class="p-settings">Mi cuenta</p>
+            </div>
+
+            <nav class="menu_sesion">
+              <ul>
+                <li><a href="#">Registrarse</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="icon-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p class="p-settings">Mi carrito</p>
+          </div>
+        </div>
       </header>
 
       <!-- MAIN -->
       <main>
-        <h2>Reseñas</h2>
-
-        <section class="grid-reseñas">
-          <div class="card-reseñas">
-            <h3>Reseña 1</h3>
+        <section class="reseñas">
+          <h2>Reseñas de Nuestros Clientes</h2>
+        
+          <div class="reseña">
+            <div class="reseña-header">
+              <h3>Juan Pérez</h3>
+              <div class="reseña-estrellas">⭐⭐⭐⭐⭐</div>
+            </div>
+            <p class="reseña-texto">
+              Excelente servicio y productos de calidad. Muy recomendable.
+            </p>
           </div>
-
-          <div class="card-reseñas">
-            <h3>Reseña 2</h3>
-          </div>
-
-          <div class="card-reseñas">
-            <h3>Reseña 3</h3>
+        
+          <div class="reseña">
+            <div class="reseña-header">
+              <h3>María López</h3>
+              <div class="reseña-estrellas">⭐⭐⭐⭐</div>
+            </div>
+            <p class="reseña-texto">
+              Buena atención y variedad. Los precios están bien.
+            </p>
           </div>
         </section>
       </main>
