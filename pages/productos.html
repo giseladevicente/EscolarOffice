@@ -82,10 +82,11 @@
           </div>
 
           <div class="icon-cart">
-            <a href="#">
+            <a href="carrito.html" class="icono-carrito">
               <i class="fa-solid fa-cart-shopping"></i>
-              <p class="p-settings">Mi carrito</p></a
-            >
+              <span id="contador-carrito">0</span>
+              <p class="p-settings">Mi carrito</p>
+            </a>
           </div>
         </div>
       </header>
@@ -115,7 +116,12 @@
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
                   <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Abrochadora', 4000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -137,7 +143,12 @@
                     <input type="radio" value="original" name="color" />Original
                   </div>
                   <p><span class="precio">Precio:</span> $2000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Bandas Elásticas x 30U.', 2000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -160,7 +171,12 @@
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
                   <p><span class="precio">Precio:</span> $2500</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Carpetas Gancho', 2500)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -183,7 +199,12 @@
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
                   <p><span class="precio">Precio:</span> $3500</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Carpetas A4', 3500)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -205,7 +226,12 @@
                     <input type="radio" value="original" name="color" />Original
                   </div>
                   <p><span class="precio">Precio:</span> $2500</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Clips x 50U.', 2500)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -221,7 +247,12 @@
               <div class="text-card">
                 <h4>Ganchos Abrochadora x 70U.</h4>
                 <p><span class="precio">Precio:</span> $3000</p>
-                <button class="button-prod">Carrito</button>
+                <button
+                  onclick="agregarAlcarrito('Ganchos Abrochadora x 70U.', 2500)"
+                  class="button-prod"
+                >
+                  Agregar al carrito
+                </button>
               </div>
             </div>
 
@@ -237,7 +268,12 @@
                 <h4>Sellos Personalizados</h4>
                 <div class="text">
                   <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Sellos Personalizados', 4000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -264,8 +300,13 @@
                     <input type="radio" value="azul" name="color" />Azul
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
-                  <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <p><span class="precio">Precio:</span> $3000</p>
+                  <button
+                    onclick="agregarAlcarrito('Carpetas con Folios', 3000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -287,8 +328,13 @@
                     <input type="radio" value="azul" name="color" />Azul
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
-                  <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <p><span class="precio">Precio:</span> $2000</p>
+                  <button
+                    onclick="agregarAlcarrito('Cuadernos', 2000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -304,8 +350,13 @@
               <div class="text-card">
                 <h4>Goma de borrar</h4>
                 <div class="text">
-                  <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <p><span class="precio">Precio:</span> $1000</p>
+                  <button
+                    onclick="agregarAlcarrito('Goma de borrar', 1000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -326,8 +377,13 @@
                     <input type="radio" value="negra" name="color" />Negra
                     <input type="radio" value="azul" name="color" />Azul
                   </div>
-                  <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <p><span class="precio">Precio:</span> $2500</p>
+                  <button
+                    onclick="agregarAlcarrito('Lapiceras', 2500)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -349,8 +405,13 @@
                     <input type="radio" value="verde" name="color" />Verde
                     <input type="radio" value="violeta" name="color" />Violeta
                   </div>
-                  <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <p><span class="precio">Precio:</span> $3000</p>
+                  <button
+                    onclick="agregarAlcarrito('Lapiceras de colores', 3000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -366,8 +427,13 @@
               <div class="text-card">
                 <h4>Lapices de colores</h4>
                 <div class="text">
-                  <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <p><span class="precio">Precio:</span> $3000</p>
+                  <button
+                    onclick="agregarAlcarrito('Lapices de colores', 3000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -384,7 +450,12 @@
                 <h4>Marcadores Permanentes</h4>
                 <div class="text">
                   <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Marcadores Permanentes', 4000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -407,7 +478,12 @@
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
                   <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Marcadores al Agua', 4000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -424,7 +500,12 @@
                 <h4>Marcadores de marca</h4>
                 <div class="text">
                   <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Marcadores de marca', 4000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -447,7 +528,12 @@
                     <input type="radio" value="negra" name="color" />Negra
                   </div>
                   <p><span class="precio">Precio:</span> $4000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Tijeras', 4000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -468,7 +554,12 @@
                 <h4>Barniz</h4>
                 <div class="text">
                   <p><span class="precio">Precio:</span> $2000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Barniz', 2000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -484,7 +575,12 @@
                 <h4>Pinceles</h4>
                 <div class="text">
                   <p><span class="precio">Precio:</span> $5.000</p>
-                  <button class="button-prod">Carrito</button>
+                  <button
+                    onclick="agregarAlcarrito('Pinceles', 5000)"
+                    class="button-prod"
+                  >
+                    Agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
@@ -508,5 +604,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="../js/index.js"></script>
   </body>
 </html>

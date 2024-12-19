@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn Font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -25,11 +26,10 @@
       href="../assets/imgs/favicon.ico"
       type="image/x-icon"
     />
-    <title>EscolarOffice</title>
+    <title>Carrito</title>
   </head>
 
   <body>
-    <!-- HEADER -->
     <div class="grid-container">
       <header class="header container_flex--header">
         <nav>
@@ -42,7 +42,7 @@
               <li><a href="../index.html">Inicio</a></li>
               <li><a href="productos.html">Productos</a></li>
               <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="#">Reseñas</a></li>
+              <li><a href="reseñas.html">Reseñas</a></li>
             </ul>
           </div>
         </nav>
@@ -80,41 +80,22 @@
               </ul>
             </nav>
           </div>
-
-          <div class="icon-cart">
-            <a href="carrito.html" class="icono-carrito">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <span id="contador-carrito">0</span>
-              <p class="p-settings">Mi carrito</p>
-            </a>
-          </div>
         </div>
       </header>
 
-      <!-- MAIN -->
       <main>
-        <section class="reseñas">
-          <h2>Reseñas de Nuestros Clientes</h2>
-
-          <div class="reseña">
-            <div class="reseña-header">
-              <h3>Juan Pérez</h3>
-              <div class="reseña-estrellas">⭐⭐⭐⭐⭐</div>
-            </div>
-            <p class="reseña-texto">
-              Excelente servicio y productos de calidad. Muy recomendable.
-            </p>
+        <section id="carrito" class="productos">
+          <h2>Tu carrito</h2>
+          <div id="lista-carrito">
+            <!-- Lista de productos -->
           </div>
 
-          <div class="reseña">
-            <div class="reseña-header">
-              <h3>María López</h3>
-              <div class="reseña-estrellas">⭐⭐⭐⭐</div>
-            </div>
-            <p class="reseña-texto">
-              Buena atención y variedad. Los precios están bien.
-            </p>
+          <div id="resumen-carrito">
+            <p>Total de productos: <span id="total-productos">0</span></p>
+            <p>Importe total: $<span id="importe-total">0</span></p>
           </div>
+
+          <button onclick="realizarCompra()">Finalizar la compra</button>
         </section>
       </main>
 
@@ -135,6 +116,6 @@
       </footer>
     </div>
 
-    <script src="../js/index.js"></script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>
