@@ -42,10 +42,49 @@ header {
     border: 2px solid #0d0404;
     border-radius: 3px;
     padding: 5px 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_list {
     display: none;
+    position: absolute;
+    top: 15vh;
+    left: 0;
+    background-color: #d5f0d5;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    z-index: 500;
+}
+
+.nav_list li {
+    list-style: none;
+    padding: 10px;
+}
+
+.nav_list ul li {
+    margin: 1em 0;
+}
+
+.nav_list a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #fff;
+}
+
+li:hover {
+    transform: translateY(-5px)
+}
+
+.nav_list.active {
+    display: block;
 }
 
 /* centro header */
@@ -325,15 +364,11 @@ footer span {
     font-family: "Permanent Marker", cursive;
 }
 
-.producto-index:hover, .button-form:hover, a:hover {
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
 
 img {
     max-width: 100%;
     height: auto;
 }
-
 
 
 /* CONTACTO */
@@ -409,143 +444,7 @@ img {
     gap: 1em;
 }
 
-
-
-/* MEDIA QUERIES */
-
-/* Small devices (portrait tablets and large phones, 600px and up)*/
-
-/* index */
-@media (min-width: 600px) {
-
-    header {
-        height: 25vh;
-    }
-    .producto-index img {
-        width: 50%;
-    }
-
-    /* footer {
-        margin-top: 10% ;
-    } */
-
-    /* Contacto */
-    
-    .textarea {
-        width: 300px;
-        height: 100px ;
-    }
-}
-
-/* medium devices 768 x 600 */
-@media (min-width: 768px) {
-
-    /* index */
-    .carousel-item img {
-        height: 200px;
-    }
-
-    .settings {
-        margin-top: 0;
-        gap: 20px;
-    }
-
-    /* contacto */
-
-    .form-contact input {
-        width: 100%;
-    }
-
-    .textarea {
-        width: 400px; 
-        height: 100px;
-    }
-}
-
-/* Large devices */
-@media (min-width: 992px) {
-
-    /* index */
-    .logo-header h1 {
-        font-size: 3em;
-    }
-    
-    .parrafo-header, .menu_sesion {
-        display: block;
-    }
-
-    .parrafo-header {
-        font-size: 1em ;
-    }
-
-    .menu_icon, .user{
-        display: none;
-    }
-
-    .menu_sesion ul, .nav_list{
-        list-style: none;
-    }
-    
-
-    .nav_list a, .menu_sesion a {
-        text-decoration: none;
-        color: #000;
-    }
-
-    .nav_list, .menu_sesion{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    a:hover {
-        color: #fff;
-    }
-
-    li:hover {
-        transform: translateY(-5px)
-    }
-
-    .menu_sesion li{
-        padding: 0.5em;
-    }
-
-    .settings {
-        gap: 30px;
-        margin-right: 2em;
-    }
-
-    .container_flex--header {
-        justify-content: space-between;
-    }
-
-    .search-header>input {
-        height: 2em;
-        margin-top: 2%;
-    }
-
-    .logo {
-        width: 3em;
-        height: 3em;
-    }
-
-    
-    /* contacto */
-
-    .form-contact input {
-        width: 30em;
-    }
-
-    .textarea {
-        width: 600px; 
-        height: 100px;
-    }
-}
-
-
-/* Carrito */
-
-/* General styles for the carrito */
+/* CARRITO */
 
 .grid-container{
     display: grid;
@@ -619,7 +518,6 @@ img {
     background-color: #c0392b;
   }
   
-  /* Resumen styles */
   #resumen-carrito {
     margin-top: 50px;
     text-align: center;
@@ -653,15 +551,60 @@ img {
     background-color: #2980b9;
   }
   
-  /* Empty cart message */
   #lista-carrito p {
     text-align: center;
     font-size: 16px;
     color: #888;
   }
-  
-  /* Mobile responsive adjustments */
-  @media (max-width: 768px) {
+
+
+
+/* MEDIA QUERIES */
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+
+/* index */
+@media (min-width: 600px) {
+
+    header {
+        height: 25vh;
+    }
+    .producto-index img {
+        width: 50%;
+    }
+
+    /* Contacto */
+    
+    .textarea {
+        width: 300px;
+        height: 100px ;
+    }
+}
+
+/* medium devices 768 x 600 */
+@media (min-width: 768px) {
+
+    /* index */
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .settings {
+        margin-top: 0;
+        gap: 20px;
+    }
+
+    /* contacto */
+    .form-contact input {
+        width: 100%;
+    }
+
+    .textarea {
+        width: 400px; 
+        height: 100px;
+    }
+
+    /* Carrito*/
     .productos .producto {
       flex-direction: column;
       align-items: flex-start;
@@ -675,8 +618,91 @@ img {
       width: 100%;
       margin-top: 10px;
     }
-  }
   
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+    /* index */
+    .logo-header h1 {
+        font-size: 3em;
+    }
+    
+    .parrafo-header, .menu_sesion {
+        display: block;
+    }
+
+    .parrafo-header {
+        font-size: 1em ;
+    }
+
+    .menu_icon, .user{
+        display: none;
+    }
+
+    .menu_sesion ul, .nav_list{
+        list-style: none;
+    }
+
+    .nav_list {
+        position: relative;
+        top: 0;
+        background-color: transparent;   
+        margin-top: 15px;
+    }
+
+
+    .nav_list a, .menu_sesion a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .nav_list, .menu_sesion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .menu_sesion li{
+        padding: 0.5em;
+    }
+
+    .settings {
+        gap: 30px;
+        margin-right: 2em;
+    }
+
+    .container_flex--header {
+        justify-content: space-between;
+    }
+
+    .search-header>input {
+        height: 2em;
+        margin-top: 2%;
+    }
+
+    .logo {
+        width: 3em;
+        height: 3em;
+    }
+
+    
+    /* contacto */
+
+    .form-contact input {
+        width: 30em;
+    }
+
+    .textarea {
+        width: 600px; 
+        height: 100px;
+    }
+}
+
 
 
 /* Extra large device */
@@ -703,16 +729,16 @@ img {
         height: 350px;
     }
     
-        /* contacto */
+    /* contacto */
 
-        .textarea {
-            width: 700px; 
-            height: 100px;
-        }
+    .textarea {
+        width: 700px; 
+        height: 100px;
+    }
 
-        .form-contact input {
-            width: 30em;
-        }
+    .form-contact input {
+        width: 30em;
+    }
 }
 
 
