@@ -1,7 +1,7 @@
 # Proyecto Talento Tech
 
 ## EscolarOffice 
-Es una página web ficticia desarrollada con **HTML semántico** y **CSS** para la estructura y el estilo visual. La página incluye un diseño responsivo basado en la metodología **mobile-first**, utilizando **Flexbox**, **Grid** y **Media Queries** para adaptarse a distintos tamaños de pantalla:
+Es una página web ficticia desarrollada con **HTML semántico**, **CSS** y **JavaScript** para la estructura, el estilo visual y la interacción con el usuario. La página incluye un diseño responsivo basado en la metodología **mobile-first**, utilizando **Flexbox**, **Grid** y **Media Queries** para adaptarse a distintos tamaños de pantalla:
 
 - **Extra small devices:** 400px x 600px
 - **Small devices:** 601px x 400px
