@@ -631,10 +631,12 @@ img {
     
     .parrafo-header, .menu_sesion {
         display: block;
+        margin-top: 1.5em;
     }
 
     .parrafo-header {
-        font-size: 1em ;
+        font-size: 1em;
+        margin: 0;
     }
 
     .menu_icon, .user{
@@ -672,7 +674,7 @@ img {
     }
 
     .settings {
-        gap: 30px;
+        gap: 10px;
         margin-right: 2em;
     }
 
@@ -682,12 +684,18 @@ img {
 
     .search-header>input {
         height: 2em;
-        margin-top: 2%;
+        margin-top: 4%;
+        width: 30vw;
     }
 
     .logo {
         width: 3em;
         height: 3em;
+        padding-left: 0.3em;
+    }
+
+    .cards h2 {
+        margin: 2em 2em 1em;
     }
 
     
@@ -700,6 +708,14 @@ img {
     .textarea {
         width: 600px; 
         height: 100px;
+    }
+
+    .container_prod--index {
+        margin-bottom: 5em;
+    }
+
+    .redes a {
+        margin-left: 0.5em;
     }
 }
 
