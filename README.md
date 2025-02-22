@@ -1,4 +1,4 @@
-# Proyecto Talento Tech
+# Proyecto Talento Tech - Front-End JS
 
 ## EscolarOffice 
 EscolarOffice es una página web ficticia desarrollada con **HTML semántico**, **CSS puro**, **Bootstrap** y **JavaScript** para la estructura, el estilo visual y la interacción con el usuario. 
