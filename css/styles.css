@@ -6,8 +6,7 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(208,240,192);
     background: radial-gradient(circle, rgba(208,240,192,1) 0%, rgba(241,241,241,1) 100%);
 }
